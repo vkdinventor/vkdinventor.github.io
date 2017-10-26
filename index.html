@@ -40,10 +40,11 @@
                     same short story in your own words using your own style. Then ask your friends or your professors to
                     correct your version.
                 </p>
-                <figure>
+                <figure id="headerItem" >
                     <img src="https://www.americanexpress.com/uk/credit-cards/seo/images/ba_classic_uk.gif" width="20%" height="20%" />
                     <figcaption>New Debit card with chip based security </figcaption>
                 </figure>
+                <button id="zoom" onclick="changePhoto()" >Zoom In</button>
                 <p>
                     This way of rewriting the same story will give you better idea of how to write short story. Of course, over the period of
                     time, you should shed all the methods of duplication and develop your own style of writing a short story.
@@ -82,5 +83,24 @@
         </span>
         </fieldset>
     </form>
+    <script type="text/javascript">
+        var bol = true;
+        function changePhoto() {
+            var zoomOutPic = '<img src="https://www.americanexpress.com/uk/credit-cards/seo/images/ba_classic_uk.gif" width="20%" height="20%" />'
+            var zoomPic = '<img src="https://www.americanexpress.com/uk/credit-cards/seo/images/ba_classic_uk.gif"/>';
+
+
+            if (bol) {
+                bol = false;
+                document.getElementById('headerItem').innerHTML = zoomPic + '<figcaption>New Debit card with chip based security </figcaption>';
+                document.getElementById('zoom').innerHTML = 'Zoom Out';
+            } else {
+                bol = true;
+                document.getElementById('headerItem').innerHTML = zoomOutPic + '<figcaption>New Debit card with chip based security </figcaption>';
+                document.getElementById('zoom').innerHTML = 'Zoom In';
+            }
+
+        }
+    </script>
     </body>
     </html
