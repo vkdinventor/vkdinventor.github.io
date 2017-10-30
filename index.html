@@ -12,6 +12,21 @@
             <h1>Contoso News</h1>
             <h2>On time, On topic</h2>
         </header>
+        <section id="carousel">
+            <figure class="visible">
+                <img src='img/efficient_cars.png' />
+                <figcaption>2017 Cars Promise to be More Fuel Efficient Than Ever</figcaption>
+            </figure>
+            <figure>
+                <img src='img/health_records.png' />
+                <figcaption>Many Doctors are Moving to Digital Health Records This Year</figcaption>
+            </figure>
+            <figure>
+                <img src='img/natural_disaster.png' />
+                <figcaption>Hurricane Threatens to Touch Down on the East Coast This Weekend</figcaption>
+            </figure>
+        </section>
+        <script src="js/script.js"></script>
         <h3>Latest News</h3>
         <article>
             <time datetime="2008-02-14 20:00">Friday, Feb,2008</time>
@@ -48,7 +63,7 @@
                 <p>
                     This way of rewriting the same story will give you better idea of how to write short story. Of course, over the period of
                     time, you should shed all the methods of duplication and develop your own style of writing a short story.
-                    </p>
+                </p>
             </section>
         </article>
         <article>
@@ -70,12 +85,12 @@
     <p>Sign up for emails</p>
     <form>
         <span>Email Address:
-                <input type="email" name="user_email" /> Delivery Prefrences:</span>
-            <span>
-            <select name = "prefrences">
-                    <option value="daily">Daily</option>
-                    <option value="weekly">Weekly</option>
-                    <option value="yearly">Yearly</option>
+            <input type="email" name="user_email" /> Delivery Prefrences:</span>
+        <span>
+            <select name="prefrences">
+                <option value="daily">Daily</option>
+                <option value="weekly">Weekly</option>
+                <option value="yearly">Yearly</option>
             </select>
         </span>
         <span>
@@ -87,7 +102,7 @@
         var bol = true;
         function changePhoto() {
             var zoomOutPic = '<img src="https://www.americanexpress.com/uk/credit-cards/seo/images/ba_classic_uk.gif" width="20%" height="20%" />'
-            var zoomPic = '<img src="https://www.americanexpress.com/uk/credit-cards/seo/images/ba_classic_uk.gif"/>';
+            var zoomPic = '<img src="https://www.americanexpress.com/uk/credit-cards/seo/images/ba_classic_uk.gif" width="40%" height="40%"/>';
 
 
             if (bol) {
@@ -102,5 +117,5 @@
 
         }
     </script>
-    </body>
-    </html
+</body>
+</html

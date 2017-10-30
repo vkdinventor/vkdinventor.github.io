@@ -5,6 +5,29 @@ header {
     background-color: #242323;
     color: #EFEFEF;
 }
+
+
+figure {
+    display: none;
+    align-content: center;
+
+}
+
+.visible {
+    display: block;
+}
+
+#carousel {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+figcaption {
+    font-family: "Times New Roman", Times, serif;
+    font-style: italic;
+}
+
 h3, article h4 {
     color: #8C1018;
 }
@@ -87,4 +110,9 @@ article {
     main  h3 {
         color: black
     }
+}
+
+#headerItem {
+    display: block;
+    text-align: center;
 }
